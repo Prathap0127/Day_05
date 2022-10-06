@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!-- Convert all the strings to title caps in a string array -->
+    <script>
+        // iife function
+       (function(str) {
+            str = str.toLowerCase().split(' ');
+            for (var i = 0; i < str.length; i++) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+            }
+            console.log(str.join(' '));
+        })("this is title case")
+        // Ananoymous function
+        let str="this is title case"
+        let titleCaps=(function(str) {
+            str = str.toLowerCase().split(' ');
+            for (var i = 0; i < str.length; i++) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+            }
+            return(str.join(' '));
+        })
+        console.log(`The Tilte case :${titleCaps(str)}`)
+
+        //arrow funtion need to work out
+            let title=(str)=>{
+                var string=[];
+                for(var i=0;i<string.length;i++){
+                    str[i]=str[i].split(" ").map(element=>element[0].toUpperCase()+element.substr[1].toLowerCase().join(""))
+                    string.push(str[i]);
+                }
+                return string
+            }
+            var str1=["this is prathap"]
+            console.log(title(str1))
+
+
+    </script>
+</body>
+</html>
