@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<!-- Return all the palindromes in an array -->
+
+<body>
+    <script>
+
+        // arrow function
+        let palindromes1 = array.filter(element => {
+            let len = element.length;
+            for (let i = 0; i < len / 2; i++) {
+                if (element[i] == element[len - i - 1]) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
+        console.log(palindromes1.toString())
+
+    </script>
+</body>
+
+</html>
